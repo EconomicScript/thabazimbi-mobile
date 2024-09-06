@@ -1,0 +1,168 @@
+main {
+    width: 95%;
+    margin: auto;
+    margin-top: 12.5%;
+}
+
+#offers, #menu {
+    padding: 3% 0%; 
+}
+
+#offers {
+    width: 100%;
+    margin: auto;
+}
+
+#offers #package {
+    width: auto !important;
+    margin: auto;
+    background-color: white;
+    display: flex;
+}
+
+#offers #package:hover {
+    transition: transform 0.25s ease-out;
+}
+
+#offers #package img {
+    width: 50%;
+    height: auto;
+}
+
+#offers #package #details {
+    width: 50%;
+    height: 100%;
+    padding: auto !important;
+    margin: auto !important;
+}
+
+#offers #package #details figcaption, #menu figcaption {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    color: rgb(68, 68, 68);
+    font-size: 2em;
+    font-weight: 600;
+    padding-left: 5%;
+}
+
+#offers #details p {
+    width: 90%;
+    text-align: left;
+    padding-left: 5%;
+}
+/*
+//Menu
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+  
+#tabs {
+    display: flex;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    border-bottom: solid 1px whitesmoke;
+}
+  
+#tabs li {
+    cursor: pointer;
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 500;
+}
+  
+#tabs li.active {
+    border-bottom: solid 1.5px black;
+}
+  
+#tab-content {
+    padding: 10px;
+}
+  
+#table {
+    width: 100%;
+    margin: auto;
+    padding: 5% 10%;
+}
+
+#table section {
+    display: flex;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px whitesmoke;
+}
+
+#table section li {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+#table section span {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+*/
+
+//Mobile Phone View
+@media screen and (max-width: 480px) {
+    #offers #package {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    #offers #package:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    #package img {
+        width: 100% !important;
+    }
+
+    #package #details {
+        width: 100% !important;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    #details figcaption, #menu figcaption {
+        padding-left: 0% !important;
+        margin: 0%;
+    }
+    
+    #details p {
+        width: 100%;
+        padding-left: 0% !important;
+        margin: 0%;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    #tabs {
+        flex-direction: column;
+    }
+
+    #table {
+        padding: 5% 0%;
+    }
+}
+
+//Tablet View
+@media screen and (min-width: 481px) and (max-width: 835px) {
+    #menu {
+        width: 100%;
+    }
+
+    #table {
+        padding: 5% 0%;
+    }
+}

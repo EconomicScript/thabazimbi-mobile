@@ -1,0 +1,86 @@
+main {
+    width: 100%;
+    margin: auto;
+    margin-top: 12.5%;
+}
+
+#reviews {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+#reviews #review {
+    padding: 7.5%;
+    background-color: whitesmoke;
+    overflow: hidden;    
+    margin-bottom: 5%;
+    border: transparent;
+}
+
+#review div {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#review div span {    
+    color: var(--dark-gray);
+}
+
+#review p {
+    text-align: left;
+}
+
+@keyframes progress-animation {
+    from {
+        width: 0;
+    }
+}
+
+#review progress {
+    width: 75%;
+    height: 7.5px;
+    border-radius: 10px; 
+    animation: progress-animation 2s ease-out 4s;
+}
+
+progress::-webkit-progress-bar {
+    background-color: gray;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 10px;    
+}
+
+#review label {
+    text-align: left;
+    font-weight: 500;
+}
+
+#review address {
+    text-align: left;
+    font-weight: 500;
+    font-style: normal;
+}
+
+//Mobile Phone View
+@media screen and (max-width: 480px) {
+    #reviews {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 5px;
+    }
+}
+
+//Tablet View
+@media screen and (min-width: 481px) and (max-width: 835px) {
+    #reviews {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400&display=swap');
+:root {
+
+    --white: white;
+    --light-gray: rgb(177, 177, 177);
+    --gray: gray;
+    --dark-gray: rgb(71, 71, 71);
+    --black: rgb(22, 22, 22);
+}
+
+:host {
+    background-color: #fff !important ;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+}
+
+* {
+    font-family: Poppins, sans-serif; 
+    color: var(--black);
+    font-size: 1em;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    margin-top: 0%;
+}
+
+#mini-heading {
+    display: block !important;
+    position: relative !important;
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-size: 0.9em !important;
+    text-align: center;
+    opacity: 0.3;
+    overflow: hidden !important;
+}
+
+#heading {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: var(--dark-gray);
+    font-weight: 200;
+    font-size: 3.25em;
+    text-align: center;
+    margin-bottom: 2.5%;
+    overflow: hidden !important;
+}
+
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #455d58, #495e59, #4e5c59);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #191654;
+    z-index: 3;
+}
+  
+#loading img {
+    height: auto !important;
+    width: 10% !important;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+}
+
+//Mobile Phone View
+@media screen and (max-width: 480px) {
+    #heading {
+        line-height: 90%;
+    }
+
+    main {
+        padding-top: 15%;
+    }
+}

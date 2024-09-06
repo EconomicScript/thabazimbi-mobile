@@ -1,0 +1,13 @@
+#whatsapp {
+    position: fixed;
+    z-index: 1;
+    padding: 6px 10px;
+    background-color: white;
+    border: solid 1px gray;
+    bottom: 20px;
+    right: 20px
+}
+
+#whatsapp span {
+    color: green;
+}

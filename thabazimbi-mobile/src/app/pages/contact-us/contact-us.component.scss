@@ -1,0 +1,153 @@
+main {
+    width: 100%;    
+    margin-top: 9.5% !important;
+    margin: auto;
+    overflow: hidden;
+}
+
+#map-and-contact {
+    color: var(--dark-gray);
+    margin: auto auto;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#map {
+    width: 50%;
+}
+
+#map iframe {
+    width: 100%;
+    margin: auto auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease-in-out;
+}
+
+main #contact {
+    width: 50%;
+    height: auto;
+    padding: 2.5%;
+}
+
+#contact ul a {
+    margin: 3.5% 0%;
+    display: flex;
+}
+
+#contact ul span {
+    margin-right: 1.5%;
+    color: var(--dark-gray);
+}
+
+#contact ul li {
+    cursor: pointer;
+}
+
+#contact form {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+#contact form input {
+    background: white;
+    padding: 7.5px 12.5px;
+    height: 100%;
+    font-size: 1rem;
+    border: solid 2px gray;  
+    width: 65%;
+    float: left;
+}
+
+#contact form input:focus {
+    outline: none;  
+}
+
+#contact form textarea {
+    border: solid 2px gray;  
+    max-height: 100%;
+    min-width: 65%;
+    max-width: 65%;
+    padding: 7.5px 12.5px;
+}
+
+#contact form textarea:focus {
+    outline: none;
+}
+
+#contact form #submit {
+    color: var(--dark-gray);
+    width: 100%;
+    padding: 0%;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#contact form button {
+    padding: 10px 32.5px;
+    margin-top: 0.5%;
+    color: white;
+    background-size: 400%;
+    transition: background 0.8s;
+    border: var(--blue);
+    border: solid 2px gray;
+}
+
+#contact form button:hover {
+    background-position: 185% 50%;
+}
+
+//Mobile Phone View
+@media screen and (max-width: 480px) {
+    #map-and-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact {
+        width: 100% !important;
+        padding-left: 0%;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+
+    form input {
+        width: 100% !important;
+    }
+
+    form textarea {
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    #map-and-contact #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    #map iframe {
+        height: 100%;
+    }
+}
+
+//Tablet View
+@media screen and (min-width: 481px) and (max-width: 835px) {
+    form input {
+        width: 100% !important;
+    }
+
+    form textarea {
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+}

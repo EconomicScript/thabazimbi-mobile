@@ -1,0 +1,26 @@
+main {
+    width: 100%;
+    margin-top: 12.5%;
+    margin-bottom: 5%;
+}
+
+#FAQ {
+    width: 95%;
+    margin: auto !important; 
+}
+
+#FAQ div {
+    border: transparent !important;
+}
+
+#FAQ div h3 {
+    color: var(--black);
+    font-weight: 700;
+    padding: 2%;
+    cursor: pointer;
+    border-bottom: solid 1px var(--light-gray);
+}
+
+#FAQ div p {
+    padding: 2%;
+}

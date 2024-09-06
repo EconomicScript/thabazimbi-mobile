@@ -1,0 +1,38 @@
+/* src/app/navbar/navbar.component.css */
+
+.navbar {
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px; /* Adjust as needed */
+}
+
+.navbar-links {
+  position: fixed;
+  top: 8.75%;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 60px; /* Adjust as needed to clear the navbar height */
+  transition: left 0.3s ease-out;
+}
+
+.navbar-links.show {
+  left: 0;
+}

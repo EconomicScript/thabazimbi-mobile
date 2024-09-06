@@ -1,0 +1,10 @@
+<!-- src/app/navbar/navbar.component.html -->
+
+<nav class="navbar">
+    <div class="navbar-links" [ngClass]="{ 'show': !isNavbarCollapsed }">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    <button (click)="toggleNavbar()" class="navbar-toggle">&#9776;</button>
+  </nav>  
